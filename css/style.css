@@ -13,11 +13,13 @@ body{
 	display: flex;
 	width: 800px;
 	margin: 0 auto;
+	background-color: #36D1DC;
 }
 
 #content{
 	width: 800px;
 	margin: 0 auto;
+	background-color: white;
 }
 
 #description{
