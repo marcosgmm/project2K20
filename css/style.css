@@ -4,7 +4,7 @@
 } 
 
 html {
-	background-color: #7D7D7D;
+	background-color: #537895;
 	width: 100%;
 }
 
@@ -13,9 +13,9 @@ body {
 	font-family: Arial;
 	margin: auto;
 	border:3px solid black;
-
+	background-color: white;
 	/*background-color: #80d4ff;*/
-	background-color: #c2e9fb;
+	/*background-color: #c2e9fb;*/
 }
 
 /*********
@@ -43,13 +43,33 @@ a:active {
 }
 
 /*********
-**TOPNAV**
+**HEADER**
 *********/
-#topnav {
-	text-align: right;
-	padding: 0.5em 2em 0.5em 0.5em;}
+#headerContainer {
+	display: flex;
+}
 
-#topnav li {
+.title {
+	width: 80%;
+}
+
+.title h1 {
+	font-weight: bold;
+	font-size: 3em;
+	padding:0.3em;
+}
+
+.topnav {
+	width: 20%;
+	text-align: right;
+}
+
+.topnav ul {
+	padding: 0.5em 1em 0.5em 0.5em;
+}
+
+
+.topnav li {
 	display: inline;
 	padding-right: 0.3em;
 }
@@ -76,26 +96,14 @@ a:active {
 #breadcrumb {
 	/*list-style-type: none;*/
 	border-bottom: 1px solid black;
-	padding: 0.5em 2em 0.5em 0.5em;
-	text-align: right;
+	padding: 0.5em 0.5em 0.5em 2em;
+	
+	background-color: #f57819;
 }
 
 #breadcrumb p {
 	font-size: 1em;
 	font-weight: bold;
-}
-/*********
-**HEADER**
-*********/
-#header {
-	text-align: left; 
-}
-
-#header h1 {
-	text-align: center;
-	font-weight: bold;
-	font-size: 4em;
-	padding:0.3em;
 }
 
 /*********
