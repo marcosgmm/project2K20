@@ -1,25 +1,85 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
-    <meta charset="utf-8">
-    <title>Campi da Paddle</title>
-    <link rel="stylesheet" media="screen" href="style/style.css" type="text/css">
-    <link rel="stylesheet" media="print" href="style/stylePrint.css" type="text/css">
+	<title> Centro Sportivo Paolotti - Paddle</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="title" content="Centro Sportivo Paolotti - Paddle" />
+    <meta name="description" content="Ti aspettiamo al Centro Sportivo Paolotti. Vieni a giocare a Paddle con noi!" />
+    <meta name="keywords" content="cento sportivo paolotti, centro sportivo, sport, nuoto calcio, tennis, paddle, piscina, istruttori" />
+    <meta name="author" content="Igli Mezini, Alfredo Graziano, Marco Seganfreddo, Gianluca Ferrari" />
+    <link rel="stylesheet" media="screen" href="../css/style.css" type="text/css"/>
+    <!--<link rel="stylesheet" media="print" href="../CSS/stileStampa.css" type="text/css">-->
 </head>
 <body>
-	<div id= "content">
-		<div id="titleBar">
-			<h1>Padel</h1>
+	<div id="topnav">
+		<ul>
+			<li><a href="contatti.html">Contatti</a></li>
+			<li><a href="loginAdmin.html">Accedi</a></li>
+		</ul>
+    </div>
+
+	<div id="header">
+		<h1>Centro Sportivo Paolotti</h1>
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li xml:lang="en"><a href="home.html">Home</a></li>
+			<li><a href="campiCalcio.html">Calcio</a></li>
+			<li><a href="piscine.html">Nuoto</a></li>
+			<li xml:lang="en" class="current">Paddle</li>
+			<li xml:lang="en"><a href="campiTennis.html">Tennis</a></li>
+			<li><a href="istruttori.html">Istruttori</a></li>
+			<li><a href="lavora.html">Lavora con noi</a></li>
+		</ul>
+	</div>
+
+	<div id="breadcrumb">
+		<p>Ti trovi in: <a href="home.html"><span xml:lang="en">Home</span></a> / <span xml:lang="en">Paddle</span></p>
+	</div>
+	<div id= "homecontent">
+		<div id="subTitle">
+			<h2 xml:lang="en">Paddle</h2>
 		</div>
 		<!--ricordarsi di correggere le lettere con gli accenti con i caratteri speciali-->
 		<div id = "description">
-			<p>Il Padel è una disciplina che combina molti sport di racchetta come il Tennis, lo Squash ed il Racquetball.</br> E’ un gioco divertente e adatto a persone di ogni età, sesso, condizioni tecniche e fisiche. Spesso diventa motivo di incontro e aggregazione, pur rimanendo una valida attività motoria per mantenersi In forma.</br> E’ un gioco di doppio, sia esso maschile, femminile o misto.</br> Il campo ha dimensioni ridotte rispetto ad un campo da Tennis, ma è diviso dalla classica rete che divide la metà campo. Nei lati di fondo viene sollevata una parete di cristallo o altro materiale trasparente, per far sì che la palla rimbalzi in maniera regolare. Il resto del campo, tolti gli ingressi, è chiuso da griglie metalliche. Il pavimento, delineato dalle classiche linee di servizio o battuta, è di materiale sintetico o altro, secondo le norme della COMMISSIONE TECNICA FEDERALE. Un gioco che appassiona ed entusiasma!!!
-		</p>
+			<p>	
+				Il <span xml:lang="en">Paddle</span> anche denominato dalla <a href="https://www.federtennis.it/">Federazione Italiana Tennis (FIT)</a> “una combinazione di più sport di racchetta", quali il  <span xml:lang="en">Tennis</span>, lo  <span xml:lang="en">Squash</span> ed il  <span xml:lang="en">Racquetball</span>, oltre che ad essere uno sport di facile apprendimento e praticabile da persone di ogni fascia d’età sesso, condizioni tecniche e fisiche (in Spagna si dice che sia capace di far giocare 3 generazioni sullo stesso campo”) permette l’aggregazione sociale mediante il coinvolgimento di 4 persone in un solo campo. Inoltre, comparato ad altri sport, in termini finanziari il <span xml:lang="en">Paddle</span> è accessibile a tutti i settori della popolazione. Il campo ha dimensioni ridotte rispetto ad un campo da <span xml:lang="en">Tennis</span>, ma è diviso dalla classica rete che divide la metà campo. Nei lati di fondo viene sollevata una parete di cristallo o altro materiale trasparente, per far sì che la palla rimbalzi in maniera regolare. Il resto del campo, tolti gli ingressi, è chiuso da griglie metalliche. Il pavimento, delineato dalle classiche linee di servizio o battuta, è di materiale sintetico o altro, secondo le norme della COMMISSIONE TECNICA FEDERALE. Un gioco che appassiona ed entusiasma!!!
+			</p>
 		</div>
-		<div id = "img">
-			<h2>I nostri campi</h2>
-			<img src="img/campiPadel.jpg" width="640" height="480" alt="Foto di entrambi i campi visti diagonalmente">
+		<h2>I nostri campi</h2>
+
+		<div class="container">
+			<img id="expandedImg" src="../images/campiPaddle1.jpg" alt="Foto campi 1"/>
 		</div>
+			<div class="row">
+			  <div class="column">
+			    <img src="../images/campiPaddle1.jpg" alt="Foto campi 1" onclick="myFunction(this);"/>
+			  </div>
+			  <div class="column">
+			    <img src="../images/campiPaddle2.jpg" alt="Foto campi 2" onclick="myFunction(this);"/>
+			  </div>
+			  <div class="column">
+			    <img src="../images/campiPaddle3.jpg" alt="Foto campi 3" onclick="myFunction(this);"/>
+			  </div>
+			</div>
+		</div>
+	<div id="footer">
+		<img id="valHTML" src="../images/ValidXHTML.png" alt="XHTML valido"/>
+		<img id="valCSS" src="../images/ValidCSS.png" alt="CSS valido"/>
+		<div id="footerSocial">
+	        <p> Ci puoi trovare anche su: </p>
+	            <a href="https://www.instagram.com">
+	                <img id="instagram" src="../images/instagram.png" alt="collegamento alla pagina instagram del centro sportivo italiano" />
+	            </a>
+	            <a href="https://www.facebook.com">
+	                <img id="facebook" src="../images/facebook.png" alt="collegamento alla pagina facebook del centro sportivo italiano" />
+	            </a>
+	    </div>
+			<p>Centro Sportivo Paolotti - Via Trieste 63 - 35121 Padova (PD)</p>
+			<p>Sito di: Igli Mezini, Alfredo Graziano, Marco Seganfreddo, Gianluca Ferrari</p>
+			<p> - All rights reserved - </p>
 	</div>
-</body>
+		<script type="text/javascript" src = "../script/main.js"></script>
+	</body>
 </html>

@@ -1,28 +1,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
 <head>
-	<link rel="stylesheet" type="text/css" href="style2.css" media="screen">
+  <title> Centro Sportivo Paolotti</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="title" content="Centro Sportivo Paolotti - Lavora con noi" />
+    <meta name="description" content="Centro Sportivo Paolotti. Se sei un istruttore compila la pagina per lavorare presso il nostro centro" />
+    <meta name="keywords" content="cento sportivo paolotti, centro sportivo, sport, calcio, tennis, paddle, piscina, istruttori" />
+    <meta name="author" content="Igli Mezini, Alfredo Graziano, Marco Seganfreddo, Gianluca Ferrari" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
 </head>
 
-<body id="lav_title">
+<div id="topnav">
+  <ul>
+    <li><a href="contatti.html">Contatti</a></li>
+    <li><a href="loginAdmin.html">Accedi</a></li>
+  </ul>
+</div>
+
+<div id="header">
+  <h1>Centro Sportivo Paolotti</h1>
+</div>
+
+<div id="menu">
+  <ul>
+    <li xml:lang="en"><a href="home.html">Home</a></li>
+    <li><a href="campiCalcio.html">Calcio</a></li>
+    <li><a href="piscine.html">Nuoto</a></li>
+    <li xml:lang="en"><a href="campiPaddle.html">Paddle</span></a></li>
+    <li xml:lang="en"><a href="campiTennis.html">Tennis</a></li>
+    <li><a href="istruttori.html">Istruttori</a></li>
+    <li class="current">Lavora con noi</li>
+  </ul>
+</div>
+
+<div id="breadcrumb">
+  <p>Ti trovi in: <a href="home.html"><span xml:lang="en">Home</span></a>  /  Lavora con noi</p>
+</div>
+
+<body>
+<div id="lavoraContent">
 	<h2>Lavora Con Noi!</h2>
 	<p>Se sei un istruttore e vuoi lavorare presso il nostro centro, inviaci i tuoi dati e ti contatteremo al più presto!</p>
 
 	<form action="qualcosa.php" id="lavora_form">
-		<label for="fname">Nome:</label>
+		  <label for="fname">Nome:</label>
   		<input type="text" id="fname" name="fname"><br>
   		<label for="lname">Cognome:</label>
    		<input type="text" id="lname" name="lname"><br>
    		<label for="bdate">Data Di Nascita:</label>
    		<input type="text" id="bdate" name="bdate"><br>
-   		<label for="mailadd">Indirizzo Mail:</label>
+   		<label for="mailadd" xml:lang="en">Mail:</label>
    		<input type="text" id="mailadd" name="mailadd" placeholder="esempio@mail.com"><br>
    		<label for="dtype">Disciplina:</label>
    		<input type="text" id="dtype" name="dtype"><br>
-   		<label for="submit">Clicca il pulsante per inviare</label> 
+   		<label for="submit">Invia</label> 
    		<input type="submit" value="Submit">
 	</form>
+</div>
+
+<div id="footer">
+  <img id="valHTML" src="../images/ValidXHTML.png" alt="XHTML valido">
+  <img id="valCSS" src="../images/ValidCSS.png" alt="CSS valido">
+  <div id="footerSocial">
+        <p> Ci puoi trovare anche su: </p>
+            <a href="https://www.instagram.com">
+                <img id="instagram" src="../images/instagram.png" alt="collegamento alla pagina instagram del centro sportivo italiano" />
+            </a>
+            <a href="https://www.facebook.com">
+                <img id="facebook" src="../images/facebook.png" alt="collegamento alla pagina facebook del centro sportivo italiano" />
+            </a>
+    </div>
+  <p>Centro Sportivo Paolotti - Via Trieste 63 - 35121 Padova (PD)</p>
+  <p>Sito di: Igli Mezini, Alfredo Graziano, Marco Seganfreddo, Gianluca Ferrari</p>
+  <p> - All rights reserved - </p>
+</div>
 
 </body>
-
 </html>

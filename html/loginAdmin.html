@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+	<title> Centro Sportivo Paolotti</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="title" content="Centro Sportivo Paolotti - Login Amministratore" />
+    <meta name="description" content="Centro Sportivo Paolotti. Pagina di login dell'amministratore" />
+    <meta name="keywords" content="cento sportivo paolotti, centro sportivo, sport, calcio, tennis, paddle, piscina, istruttori" />
+    <meta name="author" content="Igli Mezini, Alfredo Graziano, Marco Seganfreddo, Gianluca Ferrari" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+</head>
+
+<div id="topnav">
+	<ul>
+		<li><a href="contatti.html">Contatti</a></li>
+		<li class="current">Accedi</li>
+	</ul>
+</div>
+
+<div id="header">
+	<h1>Centro Sportivo Paolotti</h1>
+</div>
+
+<div id="menu">
+	<ul>
+		<li xml:lang="en"><a href="home.html">Home</a></li>
+		<li><a href="campiCalcio.html">Calcio</a></li>
+		<li><a href="piscine.html">Nuoto</a></li>
+		<li xml:lang="en"><a href="campiPaddle.html">Paddle</span></a></li>
+		<li xml:lang="en"><a href="campiTennis.html">Tennis</a></li>
+		<li><a href="istruttori.html">Istruttori</a></li>
+		<li><a href="lavora.html">Lavora con noi</a></li>
+	</ul>
+</div>
+
+<div id="breadcrumb">
+	<p>Ti trovi in: <a href="home.html"><span>Home</span></a>  /  Accedi</p>
+</div>
+
+<body>
+
+<div id="loginPage">
+	<form_to_insert />
+    <fieldset id="fieldset_login">
+        <legend>Area Admin</legend>
+        <error_login_to_insert />
+        <div class="input_line">
+            <label for="username" xml:lang="en">Username:</label>
+            <input id="username" class="general_input" type="text" name="username" maxlength="15"
+                aria-required="true" />
+        </div>
+        <div class="input_line">
+            <label for="password" xml:lang="en">Password:</label>
+            <input id="password" class="general_input" type="password" name="password" maxlength="15"
+                aria-required="true" />
+        </div>
+        <div class="login_buttons">
+            <input id="submit_login_form" class="general_button" type="submit" value="Accedi" name="Login"
+                aria-label="Accedi" />
+        </div>
+        <div class="login_buttons_desktop_hidden">
+            <a class="general_button" onclick="toggleLogin(this)">Esci</a>
+        </div>
+    </fieldset>
+    </form>
+    <div id="login_button_mobile" class="admin_login_desktop_hidden">
+        <a class="general_button" onclick="toggleLogin(this)">Area Admin</a>
+</div>
+
+<div id="footer">
+    <img id="valHTML" src="../images/ValidXHTML.png" alt="XHTML valido">
+    <img id="valCSS" src="../images/ValidCSS.png" alt="CSS valido">
+    <div id="footerSocial">
+        <p> Ci puoi trovare anche su: </p>
+            <a href="https://www.instagram.com">
+                <img id="instagram" src="../images/instagram.png" alt="collegamento alla pagina instagram del centro sportivo italiano" />
+            </a>
+            <a href="https://www.facebook.com">
+                <img id="facebook" src="../images/facebook.png" alt="collegamento alla pagina facebook del centro sportivo italiano" />
+            </a>
+    </div>
+    <p>Centro Sportivo Paolotti - Via Trieste 63 - 35121 Padova (PD)</p>
+    <p>Sito di: Igli Mezini, Alfredo Graziano, Marco Seganfreddo, Gianluca Ferrari</p>
+    <p> - All rights reserved - </p>
+</div>
+
+</body>
+
+</html>

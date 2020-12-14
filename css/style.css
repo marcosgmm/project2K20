@@ -1,59 +1,422 @@
+* {
+  padding: 0em;
+  margin: 0em;
+} 
 
-/*
-.col-sm-1.element.contatti{
+html {
+	background-color: #7D7D7D;
+	width: 100%;
 }
 
-*{
-	margin: auto 0;
-}
-*/
-
-body{
+body {
+	max-width: 1024px;
 	font-family: Arial;
-	display: flex;
-	width: 800px;
-	margin: 0 auto;
-	background-color: #36D1DC;
+	margin: auto;
+	border:3px solid black;
+
+	/*background-color: #80d4ff;*/
+	background-color: #c2e9fb;
 }
 
-#content{
-	width: 800px;
-	margin: 0 auto;
-	background-color: white;
-}
-
-#description{
-	width: 800px;
-}
-
-.titleBar.para{
-	text-align: center;
-}
-
-/*COME FARE RIFERIMENTO AD UN TAG DI UNO SPECIFICO DIV??*/
-h2 {
-	text-align: center;
-}
-
-h1{
-	text-align: center;
-}
-
-a:link {
-	color:blue;
+/*********
+**LINKS**
+*********/
+a {
+	text-decoration: none;
+	color: black;
 }
 
 a:visited {
-	color:red;
+  color: #551A8B;
 }
 
-/*PISCINE*/
-.subTitle {
-	text-align: left;
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+	color: #ff0000;
+}
+
+.current {
+	color: #0000f0;
+}
+
+/*********
+**TOPNAV**
+*********/
+#topnav {
+	text-align: right;
+	padding: 0.5em 2em 0.5em 0.5em;}
+
+#topnav li {
+	display: inline;
+	padding-right: 0.3em;
+}
+
+/*********
+***MENU***
+*********/
+#menu {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 0.5em;
 	font-size: 1.2em;
+	font-weight: bold;
 }
 
-.piscinaImg{
-	width: 640px;
-	height: 480px;
+#menu li {
+	display: inline;
+	padding-right: 1.3em;
+}
+
+/***********
+*BREADCRUMB*
+************/
+#breadcrumb {
+	/*list-style-type: none;*/
+	border-bottom: 1px solid black;
+	padding: 0.5em 2em 0.5em 0.5em;
+	text-align: right;
+}
+
+#breadcrumb p {
+	font-size: 1em;
+	font-weight: bold;
+}
+/*********
+**HEADER**
+*********/
+#header {
+	text-align: left; 
+}
+
+#header h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 4em;
+	padding:0.3em;
+}
+
+/*********
+**FOOTER**
+*********/
+#footer {
+	border-top: 1px solid black;
+	padding: 0.6em;
+	min-height: 3em;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 0.9em;
+}
+#footer img {
+	width: 5em;
+}
+
+#valHTML {
+	float: left;
+}
+
+#valCSS {
+	float: right;
+}
+
+#footerSocial {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+#footerSocial img {
+	width: 3em;
+	padding: 0.4em;
+}
+
+/*********
+*HOMEPAGE*
+*********/
+#homecontent {
+	margin-bottom: 0.5em;
+}
+
+#homecontent h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size:2em;
+	padding:0.5em;
+}
+
+#homecontent p {
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+	text-align: left;
+	padding: 0.6em;
+}
+
+#homePanoramica {
+	display: block;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 1px solid black;
+}
+
+/*********
+*CONTATTI*
+**********/
+#contattiContent {
+	text-align: left;
+	margin-left: 0.5em;
+	padding-top: 1em;
+}
+
+#contattiContent h2 {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 0.2em;
+}
+
+#contattiContent h3 {
+	font-size: 1em;
+}
+
+#contattiContent ul {
+	list-style-type: none;
+}
+
+.contactBox {
+	margin-bottom: 1.3em;
+}
+
+.contactBox p  {
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+#maps {
+	margin-top: 0.4em;
+	border: 1px solid black;
+}
+
+/***********
+****LOGIN***
+************/
+
+#loginPage {
+	margin-top: 2.5em;
+}
+
+#fieldset_login {
+	margin: 2em;
+	margin-bottom: 2.5em;
+}
+
+#fieldset_login legend {
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+.input_line label {
+	width: 5em;
+	padding: 0.9em;
+	display:inline-block;
+}
+
+.login_buttons {
+	margin-left: 1em;
+	padding-top: 0.3em;
+	width: 1em;
+}
+
+.input_line input {
+	height: 1.6em;
+}
+
+.login_buttons_desktop_hidden {
+	margin-left: 1em;
+	margin-top: 0.5em;
+	margin-bottom:0.5em;
+}
+
+#login_button_mobile {
+	margin-left: 1.5em;
+	margin-bottom: 2em;
+	display: none;
+}
+
+/*************
+**LavoraForm**
+*************/
+#lavoraContent {
+	margin: 0.5em;
+}
+
+#lavoraContent h2 {
+	font-weight: bold;
+	padding-bottom: 0.2em;
+}
+
+#lavoraContent p {
+	font-size: 1em;
+	text-align: left;
+	padding-top: 0.2em;
+}
+
+#lavora_form {
+	font-size: 1.2em;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em; 
+	padding: 1em;
+}
+
+#lavora_form input {
+	height: 1.6em;
+}
+
+#lavora_form label {
+	width: 4.5em;
+	display: inline-block;
+	padding: 0.5em;
+}
+
+/***********
+*ISTRUTTORI*
+***********/
+
+#instructors {
+	margin: 0.5em;
+}
+
+#instructors h2 {
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: left;
+	padding: 0.3em 0.4em 0.3em 0em;
+}
+
+#instructors h3 {
+	font-weight: bold;
+	font-size: 1.6em;
+	text-align: left;
+	margin-top: 0.5em;
+}
+
+.sp_logo {
+	width: 25%;
+	border: 1px solid black;
+	margin-bottom: 2em;
+}
+
+.inst_face {
+	float: left;
+	width: 9em;
+	height: 9em;
+	border: 1px solid black;
+	margin-right: 1em;
+}
+
+.inst_style {
+	border-bottom: 1px solid black;
+}
+
+.inst_style dd {
+	min-height: 12em;
+}
+
+.inst_style dt {
+	font-weight: bold;
+}
+
+
+
+/**********
+**PISCINE**
+**********/
+.piscinaImg {
+	display: block;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 1px solid black;
+}
+/*********
+**PADDLE**
+**********/
+
+.row {
+	/*mi serve per centrare le colonne, se da inserire nella relazione*/
+	display: flex;
+    padding: 0.5em;
+    justify-content: center;
+}
+
+.column {
+	display: block;
+	width: 25%;
+	float: left;
+	padding: 0.5em;
+	margin: 0 auto;
+}
+
+.column img {
+  	opacity: 0.8;
+  	cursor: pointer;
+  	width: 100%;
+}
+
+.column img:hover {
+  	opacity: 1;
+}
+
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+#expandedImg {
+	width: 80%;
+}
+
+.container {
+	padding: 0.5em 2em 0.5em 2em;
+}
+
+.container img {
+	display: block;
+	padding: 0.5em;
+	margin: 0 auto;
+}
+
+/*********
+**CALCIO**
+**********/
+
+.campoCalcioImg {
+	display: block;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 1px solid black;
+}
+
+/*********
+**TENNIS**
+**********/
+
+.campoTennisImg {
+	display: block;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 1px solid black;
 }
