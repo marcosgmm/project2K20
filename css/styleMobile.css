@@ -1,0 +1,68 @@
+/**************
+****HEADER*****
+**************/
+
+#headerContainer {
+	display: block;
+}
+
+.title {
+	width: 100%;
+	font-size: 2.8em;
+	border-bottom: 1px solid black;
+}
+
+.title h1 {
+	font-weight: bolder;
+	font-size: 2em;
+	text-align: center;
+	color: red;/*da togliere*/
+}
+
+.topnav {
+	width: auto;
+	text-align: center;
+}
+
+.topnav li {
+	font-weight: bold;
+	display: block;
+	font-size: 1.5em;
+}
+
+/*********
+***MENU***
+*********/
+
+#menu li {
+	display: block;
+	font-size: 2em;
+	text-align: center;
+}
+
+/***********
+***LAVORA***
+***********/
+#lavora_form {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#lavora_form input {
+	border: 2px solid black;
+	height: 4em;
+	width: 60%;
+}
+
+#lavora_form input::placeholder {
+	font-size: 3em;
+	text-align: center;
+}
+
+#lavora_form input[type="submit"] {
+	/*min-height: 2em;*/
+	margin-top: 1em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.7em;
+}

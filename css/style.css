@@ -18,6 +18,14 @@ body {
 	/*background-color: #c2e9fb;*/
 }
 
+.helpNav {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
 /*********
 **LINKS**
 *********/
@@ -94,10 +102,8 @@ a:active {
 *BREADCRUMB*
 ************/
 #breadcrumb {
-	/*list-style-type: none;*/
 	border-bottom: 1px solid black;
 	padding: 0.5em 0.5em 0.5em 2em;
-	
 	background-color: #f57819;
 }
 
@@ -336,6 +342,10 @@ a:active {
 
 .inst_style dt {
 	font-weight: bold;
+}
+
+.inst_style p {
+	text-align: left;
 }
 
 

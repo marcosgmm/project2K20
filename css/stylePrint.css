@@ -1,3 +1,253 @@
+* {
+  padding: 0em;
+  margin: 0em;
+} 
+
+html, body {
+	font-family: Georgia, serif;
+}
+
+.helpNav {
+	display: none;
+}
+
+
+/*********
+**HEADER**
+*********/
+
+.title h1 {
+	font-weight: bold;
+	font-size: 2em;
+	padding: 1em;
+}
+/***************************/
+.topnav {
+	display: none;
+}
+
+#menu {
+	display: none;
+}
+/***************************/
+
+/***********
+*BREADCRUMB*
+************/
+#breadcrumb {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 0.5em 0.5em 0.5em 2em;
+	margin-bottom: 0.5em;
+}
+
+#breadcrumb p {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/*********
+**FOOTER**
+*********/
+#footer {
+	border-top: 1px solid black;
+	padding: 0.6em;
+	min-height: 3em;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 0.5em;
+}
+#footer img {
+	display: none;
+}
+
+#footerSocial {
+	margin-top: 1em;
+	text-align: center;
+}
+
+#footerSocial img {
+	display: none;
+}
+
+/*********
+*HOMEPAGE*
+*********/
+#homePanoramica {
+	display: none;
+}
+
+#homecontent h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size:1.5em;
+	padding:0.5em;
+}
+
+#homecontent p {
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+	text-align: justify;
+	padding: 0.6em;
+}
+
+/*********
+*CONTATTI*
+**********/
+#contattiContent {
+	text-align: left;
+	margin-left: 0.5em;
+	padding-top: 1em;
+}
+
+#contattiContent h2 {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 0.2em;
+}
+
+#contattiContent h3 {
+	font-size: 1em;
+}
+
+#contattiContent ul {
+	list-style-type: none;
+}
+
+.contactBox {
+	margin-bottom: 1.3em;
+}
+
+.contactBox p  {
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+#maps {
+	margin-top: 0.4em;
+	border: 1px solid black;
+}
+
+/*************
+**LavoraForm**
+*************/
+#lavoraContent {
+	margin: 0.5em;
+}
+
+#lavoraContent h2 {
+	font-weight: bold;
+	padding-bottom: 0.2em;
+}
+
+#lavoraContent p {
+	font-size: 0.8em;
+	text-align: left;
+	padding-top: 0.2em;
+}
+
+#lavora_form {
+	font-size: 1em;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em; 
+	padding: 1em;
+}
+
+#lavora_form input {
+	height: 1.6em;
+}
+
+#lavora_form label {
+	width: 4.5em;
+	display: inline-block;
+	padding: 0.5em;
+}
+
+
+/***********
+*ISTRUTTORI*
+***********/
+
+#instructors {
+	margin: 0.5em;
+}
+
+#instructors h2 {
+	font-weight: bold;
+	font-size: 2em;
+	text-align: left;
+	padding: 0.3em 0.4em 0.3em 0em;
+}
+
+#instructors h3 {
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align: left;
+	margin-top: 0.5em;
+}
+
+.sp_logo {
+	display: none;
+}
+
+.inst_face {
+	display: none;
+}
+
+.inst_style {
+	border-bottom: 1px solid black;
+}
+
+.inst_style dd {
+	margin-bottom: 1em;
+}
+
+.inst_style dt {
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+.inst_style p {
+	text-align: justify;
+}
+
+/**********
+**PISCINE**
+**********/
+.piscinaImg {
+	display: none;
+}
+
+/*********
+**PADDLE**
+**********/
+.column img {
+	display: none;
+}
+
+#expandedImg {
+	display: none;
+}
+
+/*********
+**CALCIO**
+**********/
+.campoCalcioImg {
+	display: none;
+}
+
+/*********
+**TENNIS**
+**********/
+
+.campoTennisImg {
+	display: none;
+}
+
+/*
 .contatti{
 	background-color: white;
 }
+*/
