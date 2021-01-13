@@ -48,20 +48,21 @@
 	<h2>Lavora Con Noi!</h2>
 	<p>Se sei un istruttore e vuoi lavorare presso il nostro centro, inviaci i tuoi dati e ti contatteremo al più presto!</p>
 
-	<form action="qualcosa.php" id="lavora_form">
-		  <label for="fname">Nome:</label>
-  		<input type="text" id="fname" name="fname"><br>
-  		<label for="lname">Cognome:</label>
-   		<input type="text" id="lname" name="lname"><br>
-   		<label for="bdate">Data Di Nascita:</label>
-   		<input type="text" id="bdate" name="bdate"><br>
-   		<label for="mailadd" xml:lang="en">Mail:</label>
-   		<input type="text" id="mailadd" name="mailadd" placeholder="esempio@mail.com"><br>
-   		<label for="dtype">Disciplina:</label>
-   		<input type="text" id="dtype" name="dtype"><br>
-   		<label for="submit">Invia</label> 
-   		<input type="submit" value="Submit">
-	</form>
+	<form method="post" action="../php/lavora.php" id="lavora_form">
+      <messaggi />
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome"><br>
+      <label for="cognome">Cognome:</label>
+      <input type="text" id="cognome" name="cognome"><br>
+      <label for="data">Data Di Nascita:</label>
+      <input type="text" id="data" name="data"><br>
+      <label for="mail" xml:lang="en">Mail:</label>
+      <input type="text" id="mail" name="mail" placeholder="esempio@mail.com"><br>
+      <label for="disciplina">Disciplina:</label>
+      <input type="text" id="disciplina" name="disciplina"><br>
+      <label for="submit">Invia</label> 
+      <input type="submit" name="submit" value="submit">
+  </form>
 </div>
 
 <div id="footer">

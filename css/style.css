@@ -334,6 +334,30 @@ a:active {
 	padding: 0.5em;
 }
 
+#conferma p {
+	margin-left: 0.5em;
+	color: green;
+	font-size: 0.8em;
+	padding-bottom: 0.3em;
+}
+
+#errore p {
+	margin-left: 0.5em;
+	color: red;
+	font-size: 0.8em;
+	padding-bottom: 0.3em;
+}
+
+#errore ul {
+	list-style-type: none;
+}
+
+#errore li {
+	padding-bottom: 0.3em;
+	margin-left: 0.5em;
+	color: red;
+	font-size: 0.8em;
+}
 /***********
 *ISTRUTTORI*
 ***********/
@@ -355,6 +379,7 @@ a:active {
 	text-align: left;
 	margin-top: 0.5em;
 }
+
 
 .sp_logo {
 	width: 25%;

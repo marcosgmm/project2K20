@@ -31,7 +31,7 @@ CREATE TABLE candidati (
 	cognome VARCHAR(30),
 	disciplina VARCHAR(30),
 	mail VARCHAR(40),
-	dantanascita DATE
+	datanascita DATE
 )ENGINE=InnoDB;
 
 INSERT INTO candidati VALUES
