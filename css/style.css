@@ -18,12 +18,25 @@ body {
 	/*background-color: #c2e9fb;*/
 }
 
+
+p {
+	line-height: 150%;
+}
+
+
 .helpNav {
 	position: absolute;
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.subTitle {
+	text-align: center;
+	font-weight: bold;
+	font-size:2em;
+	padding:0.5em;
 }
 
 /*********
@@ -150,6 +163,31 @@ a:active {
 /*********
 *HOMEPAGE*
 *********/
+#homeContentContainer {
+	width: 90%;
+	padding: 1em;
+	margin: auto;
+}
+
+#homeChildLeft {
+	width: 55%;
+	float: left;
+	overflow: hidden;
+	padding: 1em;
+}
+
+#homeChildRight {
+	width: 40%;
+	float: left;
+	overflow: hidden;
+}
+#struttura {
+	clear: both;
+	width: 90%;
+	padding: 1em;
+	margin: auto;
+}
+
 #homecontent {
 	margin-bottom: 0.5em;
 }
@@ -362,6 +400,11 @@ a:active {
 	width: 80%;
 	border: 1px solid black;
 }
+.description ul {
+	display: table;
+	margin: 0 auto;
+}
+
 /*********
 **PADDLE**
 **********/
