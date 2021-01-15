@@ -41,7 +41,7 @@ if ( isset($_POST['submit']) ){
 		if(strlen($cognome)==0) {$messaggioLavora.='<li>Cognome troppo corto o assente</li>';}
 		if(strlen($datanascita)==0) {$messaggioLavora.='<li>Inserire data nel formato AAAA-MM-GG (anno-mese-giorno)</li>';}
 		if(strlen($mail)==0) {$messaggioLavora.='<li>Mail errata</li>';}
-		if(strlen($disciplina)) {$messaggioLavora.='<li>Inserire una disciplina tra Tennis, Calcio, Paddle, Nuoto</li>';}
+		//if(strlen($disciplina)) {$messaggioLavora.='<li>Inserire una disciplina tra Tennis, Calcio, Paddle, Nuoto</li>';}
 		$messaggioLavora.='</ul></div>';
 	}
 
