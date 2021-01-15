@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="../css/styleMobile.css" media="handheld, screen and (max-width:640px), only screen and (max-device-width:640px)"/>
   <link rel="stylesheet" type="text/css" href="../css/stylePrint.css" media="print"/>
 </head>
-
+<body>
   <div id="headerContainer" >
     <a class="helpNav" href="#menu">Vai al menù</a>
     <a class="helpNav" href="#lavoraContent">Vai al form da compilare</a>
@@ -32,7 +32,7 @@
     <li xml:lang="en"><a href="home.html">Home</a></li>
     <li><a href="campiCalcio.html">Calcio</a></li>
     <li><a href="piscine.html">Nuoto</a></li>
-    <li xml:lang="en"><a href="campiPaddle.html">Paddle</span></a></li>
+    <li xml:lang="en"><a href="campiPaddle.html">Paddle</a></li>
     <li xml:lang="en"><a href="campiTennis.html">Tennis</a></li>
     <li><a href="../php/istruttori.php">Istruttori</a></li>
     <li class="current">Lavora con noi</li>
@@ -43,21 +43,22 @@
   <p>Ti trovi in: <a href="home.html"><span xml:lang="en">Home</span></a>  /  Lavora con noi</p>
 </div>
 
-<body>
+
 <div id="lavoraContent">
 	<h2>Lavora Con Noi!</h2>
 	<p>Se sei un istruttore e vuoi lavorare presso il nostro centro, inviaci i tuoi dati e ti contatteremo al più presto!</p>
 
 	<form method="post" action="../php/lavora.php" id="lavora_form">
+    <fieldset class="site-form">
       <messaggi />
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome"><br>
+      <input type="text" id="nome" name="nome"/><br>
       <label for="cognome">Cognome:</label>
-      <input type="text" id="cognome" name="cognome"><br>
+      <input type="text" id="cognome" name="cognome"/><br>
       <label for="data">Data Di Nascita:</label>
-      <input type="text" id="data" name="data"><br>
+      <input type="text" id="data" name="data"/><br>
       <label for="mail" xml:lang="en">Mail:</label>
-      <input type="text" id="mail" name="mail" placeholder="esempio@mail.com"><br>
+      <input type="text" id="mail" name="mail"/><br>
       <label for="disciplina">Disciplina:</label>
       <select id="disciplina" name="disciplina">
         <option value="Tennis">Tennis</option>
@@ -65,14 +66,14 @@
         <option value="Paddle">Paddle</option>
         <option value="Nuoto">Nuoto</option>
       </select><br>
-      <label for="submit">Invia</label> 
-      <input type="submit" name="submit" value="submit">
+      <input type="submit" name="submit" value="Invia"/>
+    </fieldset>
   </form>
 </div>
 
 <div id="footer">
-  <img id="valHTML" src="../images/ValidXHTML.png" alt="XHTML valido">
-  <img id="valCSS" src="../images/ValidCSS.png" alt="CSS valido">
+  <img id="valHTML" src="../images/ValidXHTML.png" alt="XHTML valido"/>
+  <img id="valCSS" src="../images/ValidCSS.png" alt="CSS valido"/>
   <div id="footerSocial">
         <p> Ci puoi trovare anche su: </p>
             <a href="https://www.instagram.com">
