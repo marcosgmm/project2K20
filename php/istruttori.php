@@ -24,7 +24,7 @@ else {
 			$dlTennisti.='<dd>';
 			$dlTennisti.='<img class="inst_face" src="../images/'.$tennista['nomeimmagine'].'" alt=""/>';
 			$dlTennisti.='<p>'.$tennista['descrizione'].'</p>';
-			$dlTennisti.='<p class="tornaSu"><a href="#instructors">Torna su</a></p>';
+			$dlTennisti.='<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
 			$dlTennisti.='</dd>';
 		}
 		$dlTennisti.='</dl>';
@@ -41,7 +41,7 @@ else {
 			$dlCalciatori.='<dd>';
 			$dlCalciatori.='<img class="inst_face" src="../images/'.$calciatore['nomeimmagine'].'" alt=""/>';
 			$dlCalciatori.='<p>'.$calciatore['descrizione'].'</p>';
-			$dlCalciatori.='<p class="tornaSu"><a href="#instructors">Torna su</a></p>';
+			$dlCalciatori.='<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
 			$dlCalciatori.='</dd>';
 		}
 		$dlCalciatori.='</dl>';
@@ -58,7 +58,7 @@ else {
 			$dlPaddari.='<dd>';
 			$dlPaddari.='<img class="inst_face" src="../images/'.$paddaro['nomeimmagine'].'" alt=""/>';
 			$dlPaddari.='<p>'.$paddaro['descrizione'].'</p>';
-			$dlPaddari.='<p class="tornaSu"><a href="#instructors">Torna su</a></p>';
+			$dlPaddari.='<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
 			$dlPaddari.='</dd>';
 		}
 		$dlPaddari.='</dl>';
@@ -75,7 +75,7 @@ else {
 			$dlNuotatori.='<dd>';
 			$dlNuotatori.='<img class="inst_face" src="../images/'.$nuotatore['nomeimmagine'].'" alt=""/>';
 			$dlNuotatori.='<p>'.$nuotatore['descrizione'].'</p>';
-			$dlNuotatori.='<p class="tornaSu"><a href="#instructors">Torna su</a></p>';
+			$dlNuotatori.='<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
 			$dlNuotatori.='</dd>';
 		}
 		$dlNuotatori.='</dl>';
