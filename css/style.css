@@ -56,6 +56,26 @@ p {
 	text-align: center;
 }
 
+.photo {
+	margin: 1.5em 1em 1.5em 1em;
+	float: left;
+	max-width: 18em;
+}
+
+.photo img {
+	width: 100%;
+	height: auto;
+
+}
+
+.photo img:hover {
+	border: 1px solid black;
+}
+
+.gallery {
+	margin-top: 1em;
+}
+
 /*********
 **LINKS**
 *********/
@@ -160,6 +180,7 @@ a:active {
 	border-top: 1px solid black;
 	padding: 0.6em;
 	min-height: 3em;
+	clear: both;
 }
 
 #footer p {
@@ -402,123 +423,15 @@ a:active {
 	margin: 0.5em;
 }
 
-/*.sport_img {
-	background-image: url("../images/tennislogo.jpg");
-	min-height: 4em;
-	margin: 1em;
-	border: 1px solid black;
-}
-.inst_face {
-	float: left;
-	width: 9em;
-	height: 9em;
-	border: 1px solid black;
-	margin-right: 1em;
-}
-
-.sp_logo {
-	width: 10%;
-	border: 1px solid black;
-	margin-bottom: 2em;
-}
-*/
 
 /**********
 **PISCINE**
 **********/
-.piscinaImg {
-	display: block;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	border: 1px solid black;
-}
+
 .description ul {
-	/*display: table;
-	margin: 0 auto;
-	display: list-item;
-    margin-right: 0px;*/
+
     display: table;
     margin-left: 3em;
 	padding-top: 0.5em;
     padding-bottom: 0.5em;
-}
-
-/*********
-**PADDLE**
-**********/
-
-.row {
-	/*mi serve per centrare le colonne, se da inserire nella relazione*/
-	display: flex;
-    padding: 0.5em;
-    justify-content: center;
-}
-
-.column {
-	display: block;
-	width: 25%;
-	float: left;
-	padding: 0.5em;
-	margin: 0 auto;
-}
-
-.column img {
-  	opacity: 0.8;
-  	cursor: pointer;
-  	width: 100%;
-}
-
-.column img:hover {
-  	opacity: 1;
-}
-
-.row:after {
-  	content: "";
-  	display: table;
-  	clear: both;
-}
-
-#expandedImg {
-	width: 80%;
-}
-
-.container {
-	padding: 0.5em 2em 0.5em 2em;
-}
-
-.container img {
-	display: block;
-	padding: 0.5em;
-	margin: 0 auto;
-}
-
-/*********
-**CALCIO**
-**********/
-
-.campoCalcioImg {
-	display: block;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	border: 1px solid black;
-}
-
-/*********
-**TENNIS**
-**********/
-
-.campoTennisImg {
-	display: block;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	border: 1px solid black;
 }
