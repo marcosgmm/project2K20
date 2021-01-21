@@ -28,15 +28,15 @@ if ( isset($_POST['submit']) ){
 			/*if($chiuso == true) {echo "____database chiuso con successo____";} /*da togliere solo per test*/
 			if ($inserimento == true){
 				/*dati inseriti nel db, conferma*/
-				$messaggioLavora = '<div id="conferma"><p>Candidatura inserita correttamente</p></div>';
+				$messaggioLavora = '<div class="conferma"><p>Candidatura inserita correttamente</p></div>';
 			} else {
-				$messaggioLavora = '<div id="errore"><p>Errore nell\'inserimento<p></div>';
+				$messaggioLavora = '<div class="errore"><p>Errore nell\'inserimento<p></div>';
 			}
 		}
 
 	} else {
 		/*informazioni inserite non conformi stampo errori*/
-		$messaggioLavora = '<div id="errore"><ul>';
+		$messaggioLavora = '<div class="errore"><ul>';
 		if(strlen($nome)==0) {$messaggioLavora.= '<li>Nome troppo corto o assente</li>';}
 		if(strlen($cognome)==0) {$messaggioLavora.='<li>Cognome troppo corto o assente</li>';}
 		if(strlen($datanascita)==0) {$messaggioLavora.='<li>Inserire data nel formato AAAA-MM-GG (anno-mese-giorno)</li>';}
