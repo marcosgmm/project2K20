@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
   <link rel="stylesheet" type="text/css" href="../css/styleMobile.css" media="handheld, screen and (max-width:640px), only screen and (max-device-width:640px)"/>
   <link rel="stylesheet" type="text/css" href="../css/stylePrint.css" media="print"/>
+  <script type="text/javascript" src="../script/lavora.js"></script>
 </head>
 <body>
   <div id="headerContainer" >
@@ -48,17 +49,17 @@
 	<h2 class="center">Lavora Con Noi!</h2>
 	<p>Se sei un istruttore e vuoi lavorare presso il nostro centro, inviaci i tuoi dati e ti contatteremo al più presto!</p>
 
-	<form method="post" action="../php/lavora.php" id="lavora_form">
+	<form name="lavoraForm" method="post" action="../php/lavora.php" id="lavora_form">
     <fieldset class="site-form">
       <messaggi />
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome"/><br>
+      <input type="text" id="nome" name="nome" oninput="validNome();"/><span id="n"></span><br>
       <label for="cognome">Cognome:</label>
-      <input type="text" id="cognome" name="cognome"/><br>
+      <input type="text" id="cognome" name="cognome" oninput="validCognome();" /><span id="c"></span><br>
       <label for="data">Data Di Nascita:</label>
-      <input type="text" id="data" name="data"/><br>
+      <input type="text" id="data" name="data" oninput="validData();"/><span id="d"></span><br>
       <label for="mail" xml:lang="en">Mail:</label>
-      <input type="text" id="mail" name="mail"/><br>
+      <input type="text" id="mail" name="mail" oninput="validMail();"/><span id="m"></span><br>
       <label for="disciplina">Disciplina:</label>
       <select id="disciplina" name="disciplina">
         <option value="Tennis">Tennis</option>
@@ -66,7 +67,7 @@
         <option value="Paddle">Paddle</option>
         <option value="Nuoto">Nuoto</option>
       </select><br>
-      <input type="submit" name="submit" value="Invia"/>
+      <input type="submit" name="submit" id="submit" value="Invia"/>
     </fieldset>
   </form>
 </div>
