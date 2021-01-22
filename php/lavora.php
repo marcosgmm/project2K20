@@ -17,7 +17,14 @@ if ( isset($_POST['submit']) ){
 	$mail = $_POST['mail'];
 	$disciplina = $_POST['disciplina'];
 	/*controllo informazioni*/
-	if ( strlen($nome)!=0 && strlen($cognome)!=0 && strlen($datanascita)!=0 && strlen($mail)!=0 && strlen($disciplina)!=0 ){
+	if ( strlen($nome)!=0 && 
+		preg_match("/^[A-Za-z\s]+$/", $nome) && 
+		strlen($cognome)!=0 && 
+		preg_match("/^[A-Za-z\s]+$/", $cognome) && 
+		strlen($datanascita)!=0 && 
+		preg_match("/^(\d{4})(\-)(\d{1,2})(\-)(\d{1,2})$/", $datanascita) && 
+		strlen($mail)!=0 && 
+		preg_match("/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/", $mail) && strlen($disciplina)!=0 ){
 		/*inserisco info nel DB*/
 		$accesso = new DBAccess();
 		$connessioneOK = $accesso->openDB();
@@ -37,10 +44,10 @@ if ( isset($_POST['submit']) ){
 	} else {
 		/*informazioni inserite non conformi stampo errori*/
 		$messaggioLavora = '<div class="errore"><ul>';
-		if(strlen($nome)==0) {$messaggioLavora.= '<li>Nome troppo corto o assente</li>';}
-		if(strlen($cognome)==0) {$messaggioLavora.='<li>Cognome troppo corto o assente</li>';}
-		if(strlen($datanascita)==0) {$messaggioLavora.='<li>Inserire data nel formato AAAA-MM-GG (anno-mese-giorno)</li>';}
-		if(strlen($mail)==0) {$messaggioLavora.='<li>Mail errata</li>';}
+		if(strlen($nome)==0 || !preg_match("/^[A-Za-z\s]+$/", $nome)) {$messaggioLavora.= '<li>Nome assente o in formato errato</li>';}
+		if(strlen($cognome)==0 || !preg_match("/^[A-Za-z\s]+$/", $cognome)) {$messaggioLavora.='<li>Cognome assente o in formato errato</li>';}
+		if(strlen($datanascita)==0 || !preg_match("/^(\d{4})(\-)(\d{1,2})(\-)(\d{1,2})$/", $datanascita)) {$messaggioLavora.='<li>Inserire data nel formato AAAA-MM-GG (anno-mese-giorno)</li>';}
+		if(strlen($mail)==0 || !preg_match("/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/", $mail)) {$messaggioLavora.='<li>Mail errata o assente</li>';}
 		//if(strlen($disciplina)) {$messaggioLavora.='<li>Inserire una disciplina tra Tennis, Calcio, Paddle, Nuoto</li>';}
 		$messaggioLavora.='</ul></div>';
 	}
