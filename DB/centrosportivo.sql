@@ -2,6 +2,7 @@
 DROP TABLE IF EXISTS istruttori;
 DROP TABLE IF EXISTS candidati;
 DROP TABLE IF EXISTS excollaboratori;
+DROP TABLE IF EXISTS utente;
 
 CREATE TABLE istruttori (
 	idpersonale INT(11) PRIMARY KEY auto_increment,
@@ -52,3 +53,17 @@ CREATE TABLE excollaboratori (
 INSERT INTO excollaboratori VALUES
 (1,'Antonio','Vercetti','Tennis','A.verc@gmail.com','1975-05-15','1999-07-16'),
 (2,'Michela','Pavanin','Nuoto','M.pavanin@gmail.com','1977-02-18','2001-08-16');
+
+
+CREATE TABLE utente (
+	id INT(10) PRIMARY KEY,
+	email VARCHAR(20),
+	psw VARCHAR(20)
+)ENGINE=InnoDB;
+
+INSERT INTO utente VALUES
+(1,'admin','admin');
+
+
+
+

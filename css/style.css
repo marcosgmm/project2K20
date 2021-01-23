@@ -346,18 +346,6 @@ a:active {
 	height: 1.6em;
 }
 
-.login_buttons_desktop_hidden {
-	margin-left: 1em;
-	margin-top: 0.5em;
-	margin-bottom:0.5em;
-}
-
-#login_button_mobile {
-	margin-left: 1.5em;
-	margin-bottom: 2em;
-	display: none;
-}
-
 /*************
 **LavoraForm**
 *************/
