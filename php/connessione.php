@@ -5,6 +5,9 @@ class DBAccess {
 	private const USERNAME = "root";
 	private const PASSWORD = "";
 	private const DATABASE_NAME = "centrosportivo";
+
+
+
 	private $connection; /*variabile connessione*/
 
 	/*apertura del database*/
@@ -26,7 +29,7 @@ class DBAccess {
 
 	/*lista istruttiri per categoria insegnamento*/
 	public function getListaIstruttori($categoria) {
-		$queryIstruttori = "SELECT nome, cognome, nomeimmagine, descrizione FROM istruttori WHERE disciplina = '$categoria'";
+		$queryIstruttori = "SELECT idpersonale,nome, cognome, nomeimmagine, descrizione FROM istruttori WHERE disciplina = '$categoria'";
 		$queryRisultato = mysqli_query($this->connection, $queryIstruttori);
 		if ($queryRisultato == false) { return null; }
 		else {
@@ -34,7 +37,8 @@ class DBAccess {
 			$listaIstruttori = array();
 			while( $riga = mysqli_fetch_assoc($queryRisultato) ){
 			$istruttore = array(
-				"nome" => $riga['nome'], 
+				"idpersonale" => $riga['idpersonale'],
+				"nome" => $riga['nome'],
 				"cognome" => $riga['cognome'],
 				"nomeimmagine" => $riga['nomeimmagine'],
 				"descrizione" => $riga['descrizione']
@@ -44,23 +48,10 @@ class DBAccess {
 			return $listaIstruttori;
 		}
 	}
-
-	/*inserisci dati form lavora con noi nel database*/
-	public function insertLavoraDB($nome, $cognome, $datanascita, $mail, $disciplina){
-		$queryLavora = "INSERT INTO candidati(nome,cognome,disciplina,mail,datanascita) VALUES (\"$nome\", \"$cognome\", \"$disciplina\", \"$mail\", \"$datanascita\")";
-		$queryRisultatoIns = mysqli_query($this->connection, $queryLavora); 
-		if(mysqli_affected_rows($this->connection) > 0) {return true;}
-		else {return false;}
+	public function query($sql) {
+		$query = mysqli_query($this->connection, $sql);
+		return $query;
 	}
-
-	/*validazaione login amministratore*/
-	public function valida($email, $psw) {
-		$query = "SELECT * FROM utente WHERE email ='$email' and psw = '$psw'";
-		$risultato = mysqli_query($this->connection, $query);
-		if ($risultato->num_rows > 0) { return true; }
-		else { return false; }
-	}
-
 
 	/*lista Candidati per categoria insegnamento*/
 	public function getListaCandidati() {
@@ -85,8 +76,6 @@ class DBAccess {
 		}
 	}
 
-
-
 	public function approveListaCandidati($idcandidato) {
 		$queryIstruttori = "SELECT * FROM candidati WHERE idcandidato = '$idcandidato'";
 		$queryRisultato = mysqli_query($this->connection, $queryIstruttori);
@@ -102,6 +91,14 @@ class DBAccess {
 				mysqli_query($this->connection, $sql2);
 			}
 		}
+	}
+
+	/*inserisci dati form lavora con noi nel database*/
+	public function insertLavoraDB($nome, $cognome, $datanascita, $mail, $disciplina){
+		$queryLavora = "INSERT INTO candidati(nome,cognome,disciplina,mail,datanascita) VALUES (\"$nome\", \"$cognome\", \"$disciplina\", \"$mail\", \"$datanascita\")";
+		$queryRisultatoIns = mysqli_query($this->connection, $queryLavora); 
+		if(mysqli_affected_rows($this->connection) > 0) {return true;}
+		else {return false;}
 	}
 
 /*da controllare*/

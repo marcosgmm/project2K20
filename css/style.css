@@ -473,3 +473,37 @@ a:active {
 	padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
+
+
+/************
+****ADMIN****
+************/
+#visualizza {
+	margin-left: 1.2em;
+	font-weight: bold;
+}
+
+
+table, td, th {
+    border: 1px solid black;
+    padding: 0.7em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 2em;
+  vertical-align: bottom;
+}
+
+caption {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.togli a {
+	font-weight: bold;
+}

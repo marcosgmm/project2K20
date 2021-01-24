@@ -1,28 +1,37 @@
 <?php
-        $email = $_POST['Email'];
-		$psw = $_POST['Password'];
+session_start();
+require_once "connessione.php";
+$accesso = new DBAccess();
+$conn = $accesso->openDB();
+if ($conn == false) { die("connessione al DB fallita"); }
+$email = $_POST['email'];
+$psw = $_POST['password'];
 
-		$conn = new mysqli("localhost","root","", "prova");
+$sql = "select * from utente where email ='" . $email . "' and psw = '$psw' ";
+$result = $accesso->query($sql);
 
-		$comandoSQL = "select psw from utente where email ='" . $email ."'";
+if (isset($_GET['logout'])){
+    unset($_SESSION['admin_login']);
+    unset($_SESSION['logged_in']);
+    unset($_SESSION['user']);
+    $accesso->closeDB();
+    header("Location: ../html/loginAdmin.html");
+    exit;
+}
 
-		$risultatoAccesso = $conn -> query($comandoSQL);
-
-        if ($risultatoAccesso) {
-
-          if($riga = $risultatoAccesso -> fetch_assoc()) {
-      			 $autenticato = ($psw === $riga['psw']);
-    		} else {
-   				    $autenticato = false; }
-        }
-
-        if ($autenticato){
-            mysqli_close($conn);
-            header("Location: capo.php");
-            exit;
-        } else{
-            mysqli_close($conn);
-      		header("Location: capo.php?errore=5");
-        }
-
+if (mysqli_num_rows($result) > 0) {
+    while ($row = $result->fetch_assoc()) {
+//        echo "id: " . $row["id"] . " - psw: " . $row["email"] . " " . $row["psw"] . "<br>";
+    }
+    $_SESSION['admin_login'] = 1;
+    $_SESSION['logged_in'] = true;
+    $_SESSION['user'] = $email;
+    $accesso->closeDB();
+    header("Location: ../php/candidati.php");
+    exit;
+} else {
+    $accesso->closeDB();
+    header("Location: ../html/loginAdmin.html");
+    exit;
+}
 ?>
