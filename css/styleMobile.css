@@ -16,7 +16,6 @@
 	font-weight: bolder;
 	font-size: 2em;
 	text-align: center;
-	color: red;/*da togliere*/
 }
 
 .topnav {
@@ -50,7 +49,7 @@
 
 #lavora_form input {
 	border: 2px solid black;
-	height: 4em;
+	height: 3em;
 	width: 60%;
 }
 
@@ -65,4 +64,57 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 0.7em;
+}
+
+#n {font-size: 0.7em;}
+#c {font-size: 0.7em;}
+#d {font-size: 0.7em;}
+#m {font-size: 0.7em;}
+
+#lavora_form input[type="text"] {
+	font-size: 1em;
+}
+
+
+#lavora_form select {
+	margin-top: 1em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1em;
+	border: 2px solid black;
+	margin-top: 1.5em;
+	width: 20%;
+}
+
+
+/**************
+******NUOTO****
+**************/
+.description {
+	font-size: 2em;	
+}
+
+
+/*************
+*****HOME*****
+*************/
+#homeChildLeft {
+	width: 100%;
+}
+
+#homeChildRight {
+	width: 100%;
+}
+
+#homeChildRight h2{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#homeChildRight p{
+	font-size: 2.2em;
+}
+
+#struttura {
+	font-size: 2em;
 }

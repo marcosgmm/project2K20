@@ -407,9 +407,14 @@ a:active {
 	font-size: 0.8em;
 }
 
-.default {
-	color:#ddd;
-}
+
+#n {padding-left: 0.5em;}
+#c {padding-left: 0.5em;}
+#d {padding-left: 0.5em;}
+#m {padding-left: 0.5em;}
+
+
+
 /***********
 *ISTRUTTORI*
 ***********/

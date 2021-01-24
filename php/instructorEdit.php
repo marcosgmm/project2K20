@@ -57,7 +57,9 @@ $html = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3
 <div class="pageContent">
     <h2 class="center">Modifica Istruttori</h2>
     <p id="visualizza">'.$nome.' '.$cognome.'</p>
-    <form method="POST" action="../php/process.php" id="lavora_form" enctype="multipart/form-data">     
+    <form method="POST" action="process.php" id="lavora_form" enctype="multipart/form-data">   
+        <input type="hidden" id="idpersonale" name="idpersonale" value="'.$idpersonale.'" ><br>
+        <input type="hidden" id="nome" name="nome" value="'.$nome.'"/ ><br>
         <textarea name="descrizione" id="" cols="100" rows="10" >'.$descrizione.'</textarea><br>
         <input type="hidden" name="actiontype" value="editinstructor">
         <input type="submit" name="submit" value="Invia"/>
