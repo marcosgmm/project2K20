@@ -28,7 +28,7 @@ else {
             {
                 $dlTennisti .= '<dt>' . $tennista['nome'] . ' ' . $tennista['cognome'] . ' </dt>';
                 $dlTennisti .= '<dd>';
-                $dlTennisti .= '<img class="inst_face" src="../images/' . $tennista['nomeimmagine'] . '" alt=""/>';
+                $dlTennisti .= '<img class="inst_face" src="../images/' . $tennista['nomeimmagine'] . '" alt="Foto istruttori"/>';
                 $dlTennisti .= '<p>' . $tennista['descrizione'] . '</p>';
                 $dlTennisti .= '<p class="tornaSu"><a href="instructorEdit.php?idpersonale='.$tennista['idpersonale'].'&nome='.$tennista['nome'].'&cognome='.$tennista['cognome'].'&descrizione='.$tennista['descrizione'].'">Modifica</a></p>';
                 $dlTennisti .= '<p class="tornaSu"><a href="process.php?actiontype=delete&idpersonale='.$tennista['idpersonale'].'&nome='.$tennista['nome'].'&cognome='.$tennista['cognome'].'&descrizione='.$tennista['descrizione'].'">Rimuovi</a></p>';
@@ -39,7 +39,7 @@ else {
             {
                 $dlTennisti .= '<dt>' . $tennista['nome'] . ' ' . $tennista['cognome'] . ' </dt>';
                 $dlTennisti .= '<dd>';
-                $dlTennisti .= '<img class="inst_face" src="../images/' . $tennista['nomeimmagine'] . '" alt=""/>';
+                $dlTennisti .= '<img class="inst_face" src="../images/' . $tennista['nomeimmagine'] . '" alt="Foto istruttori"/>';
                 $dlTennisti .= '<p>' . $tennista['descrizione'] . '</p>';
                 $dlTennisti .= '<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
                 $dlTennisti .= '</dd>';
@@ -60,7 +60,7 @@ else {
             {
                 $dlCalciatori.='<dt>'.$calciatore['nome'].' '.$calciatore['cognome'].'</dt>';
                 $dlCalciatori.='<dd>';
-                $dlCalciatori.='<img class="inst_face" src="../images/'.$calciatore['nomeimmagine'].'" alt=""/>';
+                $dlCalciatori.='<img class="inst_face" src="../images/'.$calciatore['nomeimmagine'].'" alt="Foto istruttori"/>';
                 $dlCalciatori.='<p>'.$calciatore['descrizione'].'</p>';
 
                 $dlCalciatori .= '<p class="tornaSu"><a href="instructorEdit.php?idpersonale='.$calciatore['idpersonale'].'&nome='.$calciatore['nome'].'&cognome='.$calciatore['cognome'].'&descrizione='.$calciatore['descrizione'].'">Modifica</a></p>';
@@ -73,7 +73,7 @@ else {
 
                 $dlCalciatori.='<dt>'.$calciatore['nome'].' '.$calciatore['cognome'].'</dt>';
                 $dlCalciatori.='<dd>';
-                $dlCalciatori.='<img class="inst_face" src="../images/'.$calciatore['nomeimmagine'].'" alt=""/>';
+                $dlCalciatori.='<img class="inst_face" src="../images/'.$calciatore['nomeimmagine'].'" alt="Foto istruttori"/>';
                 $dlCalciatori.='<p>'.$calciatore['descrizione'].'</p>';
                 $dlCalciatori.='<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
                 $dlCalciatori.='</dd>';
@@ -94,7 +94,7 @@ else {
 
                 $dlPaddari .= '<dt>' . $paddaro['nome'] . ' ' . $paddaro['cognome'] . '</dt>';
                 $dlPaddari .= '<dd>';
-                $dlPaddari .= '<img class="inst_face" src="../images/' . $paddaro['nomeimmagine'] . '" alt=""/>';
+                $dlPaddari .= '<img class="inst_face" src="../images/' . $paddaro['nomeimmagine'] . '" alt="Foto istruttori"/>';
                 $dlPaddari .= '<p>' . $paddaro['descrizione'] . '</p>';
 
                 $dlPaddari .= '<p class="tornaSu"><a href="instructorEdit.php?idpersonale='.$paddaro['idpersonale'].'&nome='.$paddaro['nome'].'&cognome='.$paddaro['cognome'].'&descrizione='.$paddaro['descrizione'].'">Modifica</a></p>';
@@ -106,7 +106,7 @@ else {
             {
                 $dlPaddari .= '<dt>' . $paddaro['nome'] . ' ' . $paddaro['cognome'] . '</dt>';
                 $dlPaddari .= '<dd>';
-                $dlPaddari .= '<img class="inst_face" src="../images/' . $paddaro['nomeimmagine'] . '" alt=""/>';
+                $dlPaddari .= '<img class="inst_face" src="../images/' . $paddaro['nomeimmagine'] . '" alt="Foto istruttori"/>';
                 $dlPaddari .= '<p>' . $paddaro['descrizione'] . '</p>';
                 $dlPaddari .= '<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
 
@@ -128,7 +128,7 @@ else {
 
                 $dlNuotatori.='<dt>'.$nuotatore['nome'].' '.$nuotatore['cognome'].'</dt>';
                 $dlNuotatori.='<dd>';
-                $dlNuotatori.='<img class="inst_face" src="../images/'.$nuotatore['nomeimmagine'].'" alt=""/>';
+                $dlNuotatori.='<img class="inst_face" src="../images/'.$nuotatore['nomeimmagine'].'" alt="Foto istruttori"/>';
                 $dlNuotatori.='<p>'.$nuotatore['descrizione'].'</p>';
                 $dlNuotatori .= '<p class="tornaSu"><a href="instructorEdit.php?idpersonale='.$nuotatore['idpersonale'].'&nome='.$nuotatore['nome'].'&cognome='.$nuotatore['cognome'].'&descrizione='.$nuotatore['descrizione'].'">Modifica</a></p>';
                 $dlNuotatori .= '<p class="tornaSu"><a href="process.php?actiontype=delete&idpersonale='.$nuotatore['idpersonale'].'&nome='.$tennista['nome'].'&cognome='.$tennista['cognome'].'&descrizione='.$tennista['descrizione'].'">Rimuovi</a></p>';
@@ -139,7 +139,7 @@ else {
             {
                 $dlNuotatori.='<dt>'.$nuotatore['nome'].' '.$nuotatore['cognome'].'</dt>';
                 $dlNuotatori.='<dd>';
-                $dlNuotatori.='<img class="inst_face" src="../images/'.$nuotatore['nomeimmagine'].'" alt=""/>';
+                $dlNuotatori.='<img class="inst_face" src="../images/'.$nuotatore['nomeimmagine'].'" alt="Foto istruttori"/>';
                 $dlNuotatori.='<p>'.$nuotatore['descrizione'].'</p>';
                 $dlNuotatori.='<p class="tornaSu"><a href="#pageStart">Torna su</a></p>';
                 $dlNuotatori.='</dd>';
