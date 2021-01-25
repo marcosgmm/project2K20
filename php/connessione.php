@@ -2,9 +2,9 @@
 
 class DBAccess {
 	private const HOST_DB = "localhost"; 
-	private const USERNAME = "root";
-	private const PASSWORD = "root";
-	private const DATABASE_NAME = "centrosportivo";
+	private const USERNAME = "imezini";
+	private const PASSWORD = "iQuae6Phah2sae9d";
+	private const DATABASE_NAME = "imezini";
 
 
 
