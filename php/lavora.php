@@ -32,7 +32,7 @@ if ( isset($_POST['submit']) ){
 		else {
 			$inserimento = $accesso->insertLavoraDB($nome, $cognome, $datanascita, $mail, $disciplina);
 			$chiuso = $accesso->closeDB();
-			/*if($chiuso == true) {echo "____database chiuso con successo____";} /*da togliere solo per test*/
+			
 			if ($inserimento == true){
 				/*dati inseriti nel db, conferma*/
 				$messaggioLavora = '<div class="conferma"><p>Candidatura inserita correttamente</p></div>';
@@ -48,7 +48,7 @@ if ( isset($_POST['submit']) ){
 		if(strlen($cognome)==0 || !preg_match("/^[A-Za-z\s]+$/", $cognome)) {$messaggioLavora.='<li>Cognome assente o in formato errato</li>';}
 		if(strlen($datanascita)==0 || !preg_match("/^(\d{4})(\-)(\d{1,2})(\-)(\d{1,2})$/", $datanascita)) {$messaggioLavora.='<li>Inserire data nel formato AAAA-MM-GG (anno-mese-giorno)</li>';}
 		if(strlen($mail)==0 || !preg_match("/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/", $mail)) {$messaggioLavora.='<li>Mail errata o assente</li>';}
-		//if(strlen($disciplina)) {$messaggioLavora.='<li>Inserire una disciplina tra Tennis, Calcio, Paddle, Nuoto</li>';}
+		
 		$messaggioLavora.='</ul></div>';
 	}
 

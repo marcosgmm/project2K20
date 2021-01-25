@@ -1,7 +1,6 @@
 
 DROP TABLE IF EXISTS istruttori;
 DROP TABLE IF EXISTS candidati;
-DROP TABLE IF EXISTS excollaboratori;
 DROP TABLE IF EXISTS utente;
 
 CREATE TABLE istruttori (
@@ -40,19 +39,6 @@ INSERT INTO candidati VALUES
 (2,'Annalisa','Fioretti','Nuoto','A.fior@gmail.com','1990-03-18');
 
 
-CREATE TABLE excollaboratori (
-	idexcoll INT(11) PRIMARY KEY auto_increment,
-	nome VARCHAR(30),
-	cognome VARCHAR(30),
-	disciplina VARCHAR(30),
-	mail VARCHAR(40),
-	dantanascita DATE,
-	finecontratto DATE 
-)ENGINE=InnoDB;
-
-INSERT INTO excollaboratori VALUES
-(1,'Antonio','Vercetti','Tennis','A.verc@gmail.com','1975-05-15','1999-07-16'),
-(2,'Michela','Pavanin','Nuoto','M.pavanin@gmail.com','1977-02-18','2001-08-16');
 
 
 CREATE TABLE utente (

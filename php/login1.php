@@ -21,7 +21,7 @@ if (isset($_GET['logout'])){
 
 if (mysqli_num_rows($result) > 0) {
     while ($row = $result->fetch_assoc()) {
-//        echo "id: " . $row["id"] . " - psw: " . $row["email"] . " " . $row["psw"] . "<br>";
+
     }
     $_SESSION['admin_login'] = 1;
     $_SESSION['logged_in'] = true;

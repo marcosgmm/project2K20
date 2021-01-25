@@ -7,7 +7,7 @@ $connessioneOK = $accesso->openDB();
 if ($connessioneOK == false) { die("connessione al DB fallita"); }
 else {
     $candidati = $accesso->getListaCandidati();
-    /*$istruttori = $accesso->getLIstaTuttiIstruttori();*/
+    
 
 $accesso->closeDB();
 
@@ -45,12 +45,6 @@ $htmlpage = str_replace("<tabellaCandidati />", $tableCandidati, $htmlpage);
 
 echo $htmlpage;
 }
-/*
-if (isset($_SESSION['logged_in'])) {
-} else {
-    header("location: ../php/loginAdmin.php");
-    exit;
-}
-*/
+
 ?>
 

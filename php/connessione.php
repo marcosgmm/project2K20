@@ -33,7 +33,7 @@ class DBAccess {
 		$queryRisultato = mysqli_query($this->connection, $queryIstruttori);
 		if ($queryRisultato == false) { return null; }
 		else {
-			/*echo "query riuscita---"; da togliere solo per test*/
+			
 			$listaIstruttori = array();
 			while( $riga = mysqli_fetch_assoc($queryRisultato) ){
 			$istruttore = array(
@@ -59,7 +59,7 @@ class DBAccess {
 		$queryRisultato = mysqli_query($this->connection, $queryIstruttori);
 		if ($queryRisultato == false) { return null; }
 		else {
-			/*echo "query riuscita---"; da togliere solo per test*/
+			
 			$listaIstruttori = array();
 			while( $riga = mysqli_fetch_assoc($queryRisultato) ){
 			$istruttore = array(
@@ -81,7 +81,7 @@ class DBAccess {
 		$queryRisultato = mysqli_query($this->connection, $queryIstruttori);
 		if ($queryRisultato == false) { return null; }
 		else {
-			/*echo "query riuscita---"; da togliere solo per test*/
+			
 			$listaIstruttori = array();
 			while( $riga = mysqli_fetch_assoc($queryRisultato) ){
 				$sql = "INSERT INTO `istruttori` (`idpersonale`, `nome`, `cognome`, `disciplina`, `nomeimmagine`, `mail`, `datanascita`, `descrizione`) VALUES 
@@ -101,63 +101,6 @@ class DBAccess {
 		else {return false;}
 	}
 
-/*da controllare*/
-/*
-	public function getAllData($tabella){
-		$query = "SELECT * FROM $tabella";
-		$queryRisultato = mysqli_query($this->connection, $query);
-		if ($queryRisultato == false) { return null; }
-		else {
-			$lista = array();
-			if($tabella == 'candidati'){
-				while( $riga = mysqli_fetch_assoc($queryRisultato) ) {
-					$ris = array(
-						"idcandidato" =>$riga['idcandidato'],
-						"nome" =>$riga['nome'],
-						"cognome" =>$riga['cognome'],
-						"disciplina" =>$riga['disciplina'],
-						"mail" =>$riga['mail'],
-						"datanascita" =>$riga['datanascita']
-					);
-					array_push($lista, $ris);
-				}
-				return $lista;
-			}
-			elseif($tabella == 'excollaboratori') {
-				while( $riga = mysqli_fetch_assoc($queryRisultato) ) {
-					$ris = array(
-						"idexcoll" =>$riga['idexcoll'],
-						"nome" =>$riga['nome'],
-						"cognome" =>$riga['cognome'],
-						"disciplina" =>$riga['disciplina'],
-						"mail" =>$riga['mail'],
-						"datanascita" =>$riga['datanascita'],
-						"finecontratto" =>$riga['finecontratto']
-					);
-					array_push($lista, $ris);
-				}
-				return $lista;
-			}
-
-			elseif($tabella == 'istruttori') {
-				while( $riga = mysqli_fetch_assoc($queryRisultato) ) {
-					$ris = array(
-						"idpersonale" =>$riga['idexcoll'],
-						"nome" =>$riga['nome'],
-						"cognome" =>$riga['cognome'],
-						"disciplina" =>$riga['disciplina'],
-						"mail" =>$riga['mail'],
-						"datanascita" =>$riga['datanascita'],
-						"finecontratto" =>$riga['finecontratto']
-					);
-					array_push($lista, $ris);
-				}
-				return $lista;
-			}
-		}
-	}
-
-*/
 
 
 }

@@ -32,7 +32,7 @@ if(isset($_SESSION['logged_in'])){
             $html .= "<td>$disciplina</td>";
             $html .= "<td>$mail</td>";
             $html .= "<td>$datanascita</td>";
-//        $html .= "<td>$idcandidato</td>";
+
             $html .= "<td><a href='approved.php?id=" . $idcandidato . "' onClick='return sure();'>approve</a></td>";
             $html .= "</tr>";
         }
