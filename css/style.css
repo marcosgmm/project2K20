@@ -121,6 +121,10 @@ a:active {
 	color: #0000f0;
 }
 
+.contactBox a {
+	text-decoration: underline;
+	color: blue;
+}
 /*********
 **HEADER**
 *********/
